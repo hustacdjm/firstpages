@@ -1,1 +1,77 @@
-"Hello Word" 
+<style>
+
+#template-name {
+    
+    font-size: 2em;         /* Same font size as h1 */
+    font-weight: bold;      /* Make the text bold */
+    line-height: 1.2;       /* Adjust line height */
+    color: #333;            /* Set text color */
+    margin: 0 0 0.5em 0;    /* Margin around the text */
+}
+
+#template-description {
+    /* Existing styles */
+}
+
+#template-version {
+    /* Existing styles */
+}
+
+/* New styles for the styled div */
+#styled-div {
+    border: 2px dashed #000; /* Dashed border */
+    border-radius: 10px;     /* Rounded corners */
+    padding: 10px;           /* Optional: add some padding */
+    margin: 10px 0;          /* Optional: add some margin */
+    background-color: #f9f9f9; /* Optional: add a background color */
+}
+
+#container {
+    
+    padding: 10px;           /* Optional: add some padding */
+    margin: 30px 0;          /* Optional: add some margin */
+    
+
+}
+
+</style>
+
+<div id="container">
+
+<div id="template-name">Loading template name...</div>
+
+<div id="template-description">Loading...</div>
+
+<div  id="template-version">Loading...</div>
+
+<div id="styled-div">
+
+<react-react30a70399b4ed499f9eb8208993b7165c1e082192730c4707952b11ba1a3a0b24></react-react30a70399b4ed499f9eb8208993b7165c1e082192730c4707952b11ba1a3a0b24>
+<script src="./bundle.js"></script>
+
+</div>
+
+</div>
+
+<!-- Inline JavaScript to set the template name -->
+<script>
+    // Define the template object
+    var template = {
+  "name" : "Multiple Checkbox Choices",
+  "description" : "The Single Radio Choice Component is a key user interface feature used in Angular applications to allow users to select a single option from multiple predefined choices. This component is ideal for situations where only one choice is valid at a time, such as surveys, preference settings, or decision-making processes.",
+  "version" : "v1.0.0"
+};
+
+    // Get the element where you want to display the name
+    var nameElement = document.getElementById('template-name');
+    nameElement.textContent = template.name;
+
+    var descriptionElement = document.getElementById('template-description');
+    descriptionElement.textContent = template.description;
+
+    var versionElement = document.getElementById('template-version');
+    versionElement.textContent = 'Version: ' +  template.version;
+
+
+</script>
+
